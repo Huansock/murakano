@@ -27,7 +27,6 @@ const message = async (fin_text, interim, isfinal) => {
 
 }
 
-
 // 브라우저 체킹 함수
 function checkCompatibility() {
     if (!recognition) {
