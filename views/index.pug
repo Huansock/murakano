@@ -8,6 +8,14 @@ html(lang='ko')
     link(rel='stylesheet', type='text/css', href=`/static/styles/style.css`)
     script(async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8947258936212466"
      crossorigin="anonymous")
+    script(async src="https://www.googletagmanager.com/gtag/js?id=G-MT1PKDPL7J")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MT1PKDPL7J');
+    script(async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8947258936212466"
+     crossorigin="anonymous")
   body#body
     div#contents(data-id=process.env.API_KEY) 
         div#available 사용가능성 체크중
