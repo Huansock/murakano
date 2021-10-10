@@ -5,7 +5,7 @@ html(lang='ko')
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width,initial-scale=1.0")
     title 번역기
-    link(rel='stylesheet', type='text/css', href=`http://localhost:${process.env.PORT || 3000}/static/styles/style.css`)
+    link(rel='stylesheet', type='text/css', href=`http://localhost:${process.env.PORT}/static/styles/style.css`)
   body#body
     div#contents(data-id=process.env.API_KEY) 
         div#available 사용가능성 체크중
@@ -15,4 +15,4 @@ html(lang='ko')
         div#translated 번역된 말입니다
 
     div#footer @양우석이 만들었습니다.
-  script(src=`http://localhost:${process.env.PORT || 3000}/static/scripts/script.js` type="text/javascript")  
+  script(src=`http://localhost:${process.env.PORT}/static/scripts/script.js` type="text/javascript")  
