@@ -1,0 +1,39 @@
+#body{
+    background-color:rgb(241, 252, 242);
+}
+
+#contents{
+    text-align: center;
+    
+}
+#available{  
+    font-size:medium
+
+}
+#korean{
+    margin-top:150px;
+}
+#german{
+    margin-top:200px;
+}
+#script{
+    align-items:center;
+    margin: 0 auto;
+    margin-top:20px;
+    max-width:500px;
+    background-color:rgb(252, 215, 255);
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#translated{
+    margin-top:20px;
+    margin: 0 auto;
+    max-width:500px;
+    background-color:rgb(254, 255, 214);
+    border-radius: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+#footer{
+    position : fixed; bottom:0;
+    text-align:center;
+}
