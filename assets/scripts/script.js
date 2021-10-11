@@ -2,6 +2,7 @@
 const One = document.getElementById("contents")
 const 요청키 = String(One.dataset.id)
 
+
 let SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
 const recognition = new SpeechRecognition()
 
