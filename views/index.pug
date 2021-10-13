@@ -21,7 +21,7 @@ html(lang='ko')
     script(async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8947258936212466"
      crossorigin="anonymous")
   body#body
-    div#contents(data-id=) 
+    div#contents
         div#available 사용가능성 체크중
         div#korean 한국어
         div#script 말을 기다리고 있습니다.
@@ -29,5 +29,6 @@ html(lang='ko')
         div#translated 번역된 말입니다
 
     div#footer @양우석이 만들었습니다.
+  script(src="/socket.io/socket.io.js")
   script(src=`/static/scripts/script.js` type="text/javascript")  
   
