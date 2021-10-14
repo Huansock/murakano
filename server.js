@@ -8,6 +8,9 @@ import {
 } from "socket.io";
 const 요청키 = process.env.API_KEY;
 import fetch from "node-fetch";
+import path from 'path';
+const __dirname = path.resolve();
+
 const app = express()
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
@@ -37,10 +40,14 @@ app.use("/static", express.static("assets"));
 //robots txt
 app.get("/robots.txt", (req, res) => {
     res.type("text/plain");
-    res.send(
-        "User-agent: *\nAllow:/"
+    res.sendFile(
+        __dirname + "/robots.txt"
     );
 });
+app.get('/sitemap.xml', function (req, res) {
+    res.sendFile(__dirname + "/sitemap.xml");
+});
+
 
 dotenv.config()
 app.set('view engine', 'pug');
