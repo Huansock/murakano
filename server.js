@@ -34,6 +34,14 @@ const port = process.env.PORT || 5000
 import dotenv from 'dotenv';
 app.use("/static", express.static("assets"));
 
+//robots txt
+app.get("/robots.txt", (req, res) => {
+    res.type("text/plain");
+    res.send(
+        "User-agent: *\nAllow:/"
+    );
+});
+
 dotenv.config()
 app.set('view engine', 'pug');
 app.set('views', './views');
