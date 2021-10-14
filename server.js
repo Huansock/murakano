@@ -38,7 +38,6 @@ dotenv.config()
 app.set('view engine', 'pug');
 app.set('views', './views');
 app.get('/', (req, res) => res.render("index"))
-app.get('/*', (req, res) => res.redirect("index"))
 
 const handleServer = console.log("연결되었음👀💜")
 httpServer.listen(port, handleServer)
