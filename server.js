@@ -38,6 +38,7 @@ dotenv.config()
 app.set('view engine', 'pug');
 app.set('views', './views');
 app.get('/', (req, res) => res.render("index"))
+app.get('naver10bae937efbce1dff2266bf7421990c7', (req, res) => res.sendFile("naver10bae937efbce1dff2266bf7421990c7.html"))
 
 const handleServer = console.log("연결되었음👀💜")
 httpServer.listen(port, handleServer)
