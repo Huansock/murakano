@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import express from "express";
 import {
     createServer
@@ -34,7 +35,6 @@ io.on("connection", (socket) => {
 })
 
 const port = process.env.PORT || 5000
-import dotenv from 'dotenv';
 app.use("/static", express.static("assets"));
 
 //robots txt
@@ -53,7 +53,8 @@ dotenv.config()
 app.set('view engine', 'pug');
 app.set('views', './views');
 app.get('/', (req, res) => res.render("index"))
-app.get('/*', (req, res) => res.redirect("index"))
+app.get('/Howto', (req, res) => res.render("Howto"))
+app.get('/Usage', (req, res) => res.render("Usage"))
 
 const handleServer = console.log("연결되었음👀💜")
 httpServer.listen(port, handleServer)

@@ -1,10 +1,5 @@
 const socket = io();
 
-
-//  var fetch = require('node-fetch')
-const One = document.getElementById("contents")
-
-
 let SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
 const recognition = new SpeechRecognition()
 
