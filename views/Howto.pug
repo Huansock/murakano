@@ -3,9 +3,10 @@ html(lang='de')
   head
     meta(charset='utf-8')
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    meta(property="og:title" content="De - Ko Übersetzer")
-    meta(property="og:description" content="Mobiltelefon nicht verfügbar, Chrom Browser erforderlich")
+    meta(property="og:title" content="한독 자동 통역 사이트")
+    meta(property="og:description" content="모바일 사용가능, 크롬브라우저 추천")
     meta(property="og:image" content="/static/images/home.png")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     script(src="https://kit.fontawesome.com/03953410b5.js" crossorigin="anonymous")
     title 사용법
     link(rel='stylesheet', type='text/css', href=`/static/styles/How.css`)
@@ -17,28 +18,39 @@ html(lang='de')
     div#Document 
       h1#superTitle 세팅
       div#caution
-      h4(style={color: "red"}) 
-        i(class="fas fa-exclamation-triangle")
-          |   주의사항
-          p
-          | 현재 이 사이트는 크롬, 사파리, 엣지, 브래이브 브라우저에서만 
-          | 쓰실 수 있습니다.                
-      h2 컴퓨터 마이크 세팅 
+        h4(style={color: "red"}) 
+          i(class="fas fa-exclamation-triangle")
+            |   주의사항
+            p
+            | 모바일과 데스크톱의 설정이 다릅니다. 본인에게 맞는 환경을 클릭해주세요. 
+        div#Button
+          input(type="button", value="mobile", id="mobileBtn")  
+          input(type="button", value="desktop", id="desktopBtn")  
+      h2#comSet 데스크탑 세팅 -1 
       div.description
         img(src="/static/images/mic setting.gif")
         p.description_script
           | 우선 당신의 컴퓨터 마이크가 잘 들어가는 지 확인해주세요. 정상이라면 위의 사진처럼 볼륨이 말할 때마다 
           | 움직여야합니다. 3만원 짜리 핀마이크를 사서 노트북이랑 연결하면 최고입니다. 그냥 노트북으로 하는 것보다 훨~~씬 인식을 잘합니다. 
-      h2 컴퓨터 마이크 볼륨세팅 
+      h2 데스크탑 세팅 -2 
       div.description
         img(src="/static/images/mic vol setting.gif")
         p.description_script
           | 위처럼 안 뜬다? 그럼 마이크가 꺼져 있거나 볼륨이 너무 작은겁니다. 본인이 쓰는 마이크를 더블클릭해서 설정에 들어간 후 옆에 사진처럼 볼륨을 이빠이 올려줍시다.
-      h2 사이트 마이크 세팅
+      h2 데스크탑 세팅 -3
       div.description
         img#web(src="/static/images/web mic setting.gif")
         p.description_script
           | 사이트를 맨 처음 들어가면 마이크 권한을 요구하는 데 허락해주세요. 거절을 누르셨다구요? 그러면 크롬 설정가서 다시 권한을 줘야합니다. 권한을 주셨으면 왼쪽 사진처럼 본인이 현재 쓰는 마이크를 설정해주세요. 그럼 인식이 될겁니다. 
+      h2#mobSet 모바일 세팅
+      div.Android_description
+        img#AndWeb(src="/static/images/android_web.gif")
+        p.description_script
+          | 1. 구글 앱스토어에서 Google앱을 깝니다.
+        p.description_script
+          | 2. 크롬 브라우저, 삼성 브라우저, 사파리에서 사이트에 접속합니다. 그럼 위 사진처럼 이용이 가능하실겁니다.
+        p.description_script
+          | * 현재 핸드폰 사파리 브라우저에서 정상이용이 안되는 현상이 가끔 있습니다. 그럴 땐 크롬브라우저 사용을 추천드립니다.
       div(style="text-align:center;")
         h2 에러 대처 방안
         p 1. 혹시 현재 마이크를 쓰는 탭이 두개입니까? 탭을 하나만 납두고 새로고침을 해보세요. 한 5번쯤 눌러보세요 
@@ -49,11 +61,11 @@ html(lang='de')
       a#usageLink(href="/Usage")
         div#Usage
           div
-            p(style="font-size: 30px") 이걸 어케 써먹는지 보러가기
+            p 이걸 어케 써먹는지 보러가기
           div(style="margin-left: 20px")
             i(class="fas fa-angle-double-right fa-3x" style="color: gray")
           
     div#footer 양우석이 만듬.
       img#face(src="/static/images/face.png")
-  
+  script(src=`/static/scripts/How.js` type="text/javascript")
 

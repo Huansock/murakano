@@ -55,6 +55,9 @@ function onstart(e) {
     checkCompatibility();
 }
 
+
+
+
 // 기본적인 음성인식 설정
 recognition.lang = "ko"
 recognition.continuous = false

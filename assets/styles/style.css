@@ -54,4 +54,17 @@
 #header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+@media screen and (max-width: 850px) { 
+    #available{
+        margin-top: 30px;
+    }
+    #Howto{
+        width:40px;
+    }
+    #leftheader{
+        padding:5px;
+    }
+ }
