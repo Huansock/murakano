@@ -106,7 +106,7 @@ input:hover {
 #AndWeb{
     outline-style: inset; outline-color: rgb(255, 234, 226);
 }
-@media screen and (max-width: 850px) { 
+@media screen and (max-width: 800px) { 
     .description{
         display: flex;
         flex-direction: column;
